@@ -6,8 +6,8 @@ from object_detector import *
 import numpy as np
 
 # load aruco detector
-parameters = cv2.aruco.DetectorParameters_create()
-aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_50)
+parameters = cv2.aruco.DetectorParameters()
+aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_5X5_50)
 
 # load object detector
 detector = HomogeneousBgDetector()
