@@ -16,7 +16,8 @@ detector = HomogeneousBgDetector()
 img = cv2.imread("phone_aruco_marker.jpg")
 
 # get aruco marker
-corners, _, _ = cv2.aruco.detectMarkers(img, aruco_dict, parameters=parameters)
+aruco_detector = cv2.aruco.ArucoDetector(aruco_dict, parameters)
+corners, ids, rejected = aruco_detector.detectMarkers(img)
 
 # draw polygon arround the marker
 int_corners = np.int0(corners)
