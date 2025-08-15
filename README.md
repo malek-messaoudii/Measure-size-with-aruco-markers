@@ -4,7 +4,7 @@ This implementation for measuring objects with Aruco Marker.
 
 ## Clone the repository
 ```sh
-git clone https://github.com/ShehaniWageesha/Measure-Object-Size.git
+git clone https://github.com/malek-messaoudii/Measure-size-with-aruco-markers.git
 ```
 
 ## Installation
